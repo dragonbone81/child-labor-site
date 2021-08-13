@@ -9,10 +9,10 @@ const Video = ({embedId}) => (
     />
 );
 const sendEvent = () => {
+    // console.log(window)
+    // const x = window.dataLayer.push({'event': "end-video"})
+    // console.log(x)
     // console.log(window.dataLayer)
-    const x = window.dataLayer.push({'event': "end-video"})
-    console.log(x)
-    console.log(window.dataLayer)
-    // gtag('event', "end-video");
+    window.gtag('event', "end-video");
 }
 export default Video;
